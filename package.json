@@ -1,8 +1,10 @@
 {
   "name": "lib-base",
+  "moduleName": "_libBase",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/main.js",
+  "main": "./lib/index.js",
+  "types": "./lib/src/index.d.ts",
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
@@ -18,6 +20,9 @@
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
     "rollup": "^2.70.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.31.2"
   }
 }

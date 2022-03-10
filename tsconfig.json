@@ -5,12 +5,14 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "lib": [
-      "es2017"
+      "DOM",
+      "ESNext"
     ],
     "strict": true,
     "esModuleInterop": false,
-    "outDir": "out-tsc",
-    "rootDir": "./"
+    "rootDir": "./",
+    "declaration": true,
+    "declarationDir": "./lib",
   },
   "include": [
     "./src/**/*.ts"
