@@ -1,0 +1,23 @@
+{
+  "name": "lib-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lizhi.fm:tianhanyi/lib-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "eslint": "^8.10.0",
+    "rollup": "^2.70.0",
+    "rollup-plugin-typescript2": "^0.31.2"
+  }
+}
