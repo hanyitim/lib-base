@@ -1,8 +1,9 @@
+export {
+  sayHello,
+  sayHi
+} from './modules/say';
 
-import * as say from './modules/say';
-import * as todo from './modules/todo';
-
-export default {
-  ...say,
-  ...todo
-};
+export {
+  todoEat,
+  todoShopping
+} from './modules/todo';
