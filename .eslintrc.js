@@ -29,7 +29,8 @@ module.exports = {
     'no-debugger': 'off',
     'template-curly-spacing': 'off',
     'indent': 'off',
-    'no-empty-function': 'off'
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-explicit-any': ['off']
   },
 };
 
