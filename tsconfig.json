@@ -15,7 +15,10 @@
     "declarationDir": "./lib",
   },
   "include": [
-    "./src/**/*.ts",
-    "test/say.test.ts"
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "./script/**"
   ]
 }
