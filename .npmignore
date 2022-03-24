@@ -1,0 +1,9 @@
+/node_modules
+/src
+.eslintrc.js
+.editorconfig
+.eslintignore
+jest.config.jest
+rollup.config.je
+tsconfig.json
+/types
