@@ -1,6 +1,7 @@
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
+import copy from 'rollup-plugin-copy';
 import path from 'path';
 import pkg from './package.json';
 const formatList = [
@@ -33,6 +34,11 @@ const config = [
     output: formatList,
     plugins: [
       resolve(),
+      copy({
+        targets: [
+          { src: path.resolve(__dirname, './types/*'), dest: path.resolve(__dirname, 'lib/types') }
+        ]
+      }),
       typescript({ useTsconfigDeclarationDir: true, tsconfig: path.resolve(__dirname, './tsconfig.json'), }),
       commonjs()
     ]
