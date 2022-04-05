@@ -4,10 +4,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
+  "module": "./lib/index.esm.js",
+  "browser": "./lib/index.umd.js",
   "types": "./lib/src/index.d.ts",
   "scripts": {
     "build": "rm -rf ./lib && rollup --config rollup.config.js",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,11 +23,11 @@
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
     "rollup": "^2.70.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-dts": "^4.2.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.31.2",
     "ts-jest": "^27.1.3",
